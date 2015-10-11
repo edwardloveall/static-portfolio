@@ -1,0 +1,11 @@
+body {
+  background-color: $background-color;
+}
+
+main {
+  @include outer-container;
+
+  @include media($desktop) {
+    max-width: 803px;
+  }
+}

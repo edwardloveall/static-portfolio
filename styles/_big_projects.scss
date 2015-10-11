@@ -1,0 +1,31 @@
+.project {
+  @include display(flex);
+  background: $white none no-repeat center center;
+  border: $default-border;
+  flex-direction: column;
+  height: 260px;
+  margin-bottom: $base-spacing;
+
+  @include media($desktop) {
+    @include span-columns(4);
+    @include display(flex);
+  }
+
+  img {
+    margin: auto;
+  }
+
+  h3 {
+    font-family: $sans-serif;
+    font-size: $font-size-header;
+    letter-spacing: $letter-spacing-header;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+
+    a {
+      color: $header-text-color;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@import 'neat/neat-helpers';
+
+$column: 44px;
+$gutter: 25px;
+$grid-columns: 4;
+$max-width: 320px;
+
+$desktop: new-breakpoint(min-width 800px 12);

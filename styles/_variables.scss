@@ -1,0 +1,24 @@
+$white: #fff;
+$light-gray: #fbfbfb;
+$medium-light-gray: #ededed;
+$medium-gray: #b1b1b1;
+$dark-gray: #3c3e42;
+$red: #ef2d27;
+
+$accent-color: $red;
+$body-text-color: $medium-gray;
+$header-text-color: $dark-gray;
+$background-color: $light-gray;
+$border-color: $medium-light-gray;
+
+$sans-serif: 'proxima-nova', $helvetica;
+$serif: 'garamond-premier-pro-caption', $georgia;
+
+$body-font: $serif;
+$header-font: $sans-serif;
+
+$font-size-header: 20px;
+$letter-spacing-header: 2px;
+
+$default-border: 1px solid $border-color;
+$base-spacing: 24px;
