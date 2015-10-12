@@ -16,16 +16,11 @@
   }
 
   h3 {
-    font-family: $sans-serif;
-    font-size: $font-size-header;
-    letter-spacing: $letter-spacing-header;
     margin-bottom: 20px;
     text-align: center;
-    text-transform: uppercase;
 
     a {
-      color: $header-text-color;
-      text-decoration: none;
+      @include header-link-style;
     }
   }
 }

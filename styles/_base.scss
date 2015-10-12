@@ -1,5 +1,6 @@
 body {
   background-color: $background-color;
+  position: relative;
 }
 
 main {
@@ -8,4 +9,12 @@ main {
   @include media($desktop) {
     max-width: 803px;
   }
+}
+
+html,
+body,
+main,
+nav.main,
+div.track {
+  overflow-x: hidden;
 }

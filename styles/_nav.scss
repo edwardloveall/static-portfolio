@@ -1,0 +1,26 @@
+nav.main {
+  height: 0.1px;
+  margin-bottom: golden-ratio($base-spacing, 1);
+  text-align: center;
+
+  div.track {
+    @include transform(translateX(-50%));
+    @include transition(transform 0.2s ease);
+    display: inline;
+    position: absolute;
+    white-space: nowrap;
+  }
+
+  a {
+    @include header-link-style;
+    padding: $base-spacing;
+  }
+}
+
+a.more {
+  @include hide-text;
+  @include size(27px 10px);
+  background: transparent url('/assets/images/chevron.svg') no-repeat center;
+  display: block;
+  margin: 0 auto golden-ratio($base-spacing, 1);
+}

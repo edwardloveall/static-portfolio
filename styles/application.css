@@ -17,7 +17,8 @@ header, footer, main {
   padding: 0; }
 
 body {
-  background-color: #fbfbfb; }
+  background-color: #fbfbfb;
+  position: relative; }
 
 main {
   max-width: 320px;
@@ -30,6 +31,13 @@ main {
   @media screen and (min-width: 800px) {
     main {
       max-width: 803px; } }
+
+html,
+body,
+main,
+nav.main,
+div.track {
+  overflow-x: hidden; }
 
 header, div.orbit {
   -webkit-transform-style: preserve-3d;
@@ -497,6 +505,40 @@ div.orbit:after {
     -ms-transform: rotateY(-360deg);
     -o-transform: rotateY(-360deg);
     transform: rotateY(-360deg); } }
+nav.main {
+  height: 0.1px;
+  margin-bottom: 38.832px;
+  text-align: center; }
+  nav.main div.track {
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: -webkit-transform 0.2s ease;
+    -moz-transition: -moz-transform 0.2s ease;
+    transition: transform 0.2s ease;
+    display: inline;
+    position: absolute;
+    white-space: nowrap; }
+  nav.main a {
+    color: #3c3e42;
+    font: bold 20px "proxima-nova", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 24px; }
+
+a.more {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+  height: 10px;
+  width: 27px;
+  background: transparent url("/assets/images/chevron.svg") no-repeat center;
+  display: block;
+  margin: 0 auto 38.832px; }
+
 .project {
   display: -webkit-box;
   display: -moz-box;
@@ -528,14 +570,11 @@ div.orbit:after {
   .project img {
     margin: auto; }
   .project h3 {
-    font-family: "proxima-nova", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-    font-size: 20px;
-    letter-spacing: 2px;
     margin-bottom: 20px;
-    text-align: center;
-    text-transform: uppercase; }
+    text-align: center; }
     .project h3 a {
       color: #3c3e42;
-      text-decoration: none; }
-
-/*# sourceMappingURL=application.css.map */
+      font: bold 20px "proxima-nova", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+      letter-spacing: 2px;
+      text-decoration: none;
+      text-transform: uppercase; }
