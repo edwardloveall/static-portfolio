@@ -33,10 +33,7 @@ main {
       max-width: 803px; } }
 
 html,
-body,
-main,
-nav.main,
-div.track {
+body {
   overflow-x: hidden; }
 
 header, div.orbit {
@@ -578,3 +575,5 @@ a.more {
       letter-spacing: 2px;
       text-decoration: none;
       text-transform: uppercase; }
+
+/*# sourceMappingURL=application.css.map */
