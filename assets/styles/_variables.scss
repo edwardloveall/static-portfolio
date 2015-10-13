@@ -17,15 +17,19 @@ $serif: 'garamond-premier-pro-caption', $georgia;
 
 $font-family-body: $serif;
 $font-family-header: $sans-serif;
+$font-family-footer: $sans-serif;
 
 $font-size-header: 20px;
 $font-size-header-small: 12px;
 $font-size-body: 20px;
+$font-size-footer: 16px;
 $letter-spacing-header: 2px;
 
 $font-header: bold $font-size-header $font-family-header;
 $font-header-small: 600 $font-size-header-small $font-family-header;
 $font-body: italic normal $font-size-body $font-family-body;
+$font-footer: normal $font-size-footer $font-family-footer;
 
 $default-border: 1px solid $border-color;
 $base-spacing: 24px;
+$big-spacing: $base-spacing * 2.5;

@@ -5,7 +5,7 @@ section.links {
   h4 {
     font: $font-header-small;
     letter-spacing: 1.25px;
-    margin: $base-spacing * 2.5 0;
+    margin: $big-spacing 0;
     text-transform: uppercase;
   }
 
@@ -30,6 +30,6 @@ section.links {
 hr {
   border: 0;
   border-bottom: 1px solid $light-blue-gray;
-  margin: $base-spacing * 2.5 auto;
+  margin: $big-spacing auto;
   width: golden-ratio(100%, -2);
 }

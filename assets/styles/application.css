@@ -608,4 +608,14 @@ hr {
   margin: 60px auto;
   width: 38.19821%; }
 
+footer {
+  background-color: #3c3e42;
+  color: #ededed;
+  font: normal 16px "proxima-nova", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  margin-top: 60px;
+  padding: 24px;
+  text-align: center; }
+  footer a:hover {
+    text-decoration: underline; }
+
 /*# sourceMappingURL=application.css.map */
