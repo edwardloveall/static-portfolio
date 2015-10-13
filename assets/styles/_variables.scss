@@ -1,4 +1,5 @@
 $white: #fff;
+$light-blue-gray: #e8ebed;
 $light-gray: #fbfbfb;
 $medium-light-gray: #ededed;
 $medium-gray: #b1b1b1;
@@ -14,11 +15,17 @@ $border-color: $medium-light-gray;
 $sans-serif: 'proxima-nova', $helvetica;
 $serif: 'garamond-premier-pro-caption', $georgia;
 
-$body-font: $serif;
-$header-font: $sans-serif;
+$font-family-body: $serif;
+$font-family-header: $sans-serif;
 
 $font-size-header: 20px;
+$font-size-header-small: 12px;
+$font-size-body: 20px;
 $letter-spacing-header: 2px;
+
+$font-header: bold $font-size-header $font-family-header;
+$font-header-small: 600 $font-size-header-small $font-family-header;
+$font-body: italic normal $font-size-body $font-family-body;
 
 $default-border: 1px solid $border-color;
 $base-spacing: 24px;

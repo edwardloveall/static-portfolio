@@ -1,3 +1,7 @@
+.big-projects {
+  @include clearfix;
+}
+
 .project {
   @include display(flex);
   background: $white none no-repeat center center;
@@ -9,6 +13,7 @@
   @include media($desktop) {
     @include span-columns(4);
     @include display(flex);
+    margin-bottom: 0;
   }
 
   img {

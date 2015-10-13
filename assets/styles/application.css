@@ -536,6 +536,11 @@ a.more {
   display: block;
   margin: 0 auto 38.832px; }
 
+.big-projects::after {
+  clear: both;
+  content: "";
+  display: table; }
+
 .project {
   display: -webkit-box;
   display: -moz-box;
@@ -561,7 +566,8 @@ a.more {
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      margin-bottom: 0; }
       .project:last-child {
         margin-right: 0; } }
   .project img {
@@ -575,5 +581,30 @@ a.more {
       letter-spacing: 2px;
       text-decoration: none;
       text-transform: uppercase; }
+
+section.links {
+  color: #b1b1b1;
+  text-align: center; }
+  section.links h4 {
+    font: 600 12px "proxima-nova", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    letter-spacing: 1.25px;
+    margin: 60px 0;
+    text-transform: uppercase; }
+  section.links ul {
+    font: italic normal 20px "garamond-premier-pro-caption", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+    list-style-type: none; }
+  section.links li {
+    margin-bottom: 24px; }
+  section.links a {
+    color: #b1b1b1;
+    text-decoration: none; }
+    section.links a:hover {
+      text-decoration: underline; }
+
+hr {
+  border: 0;
+  border-bottom: 1px solid #e8ebed;
+  margin: 60px auto;
+  width: 38.19821%; }
 
 /*# sourceMappingURL=application.css.map */

@@ -1,0 +1,36 @@
+section.links {
+  color: $medium-gray;
+  text-align: center;
+
+  h4 {
+    font: $font-header-small;
+    letter-spacing: 1.25px;
+    margin: $base-spacing * 2.5 0;
+    text-transform: uppercase;
+  }
+
+  ul {
+    font: $font-body;
+    list-style-type: none;
+  }
+
+  li {
+    margin-bottom: $base-spacing;
+  }
+
+  a {
+    color: $medium-gray;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid $light-blue-gray;
+  margin: $base-spacing * 2.5 auto;
+  width: golden-ratio(100%, -2);
+}
