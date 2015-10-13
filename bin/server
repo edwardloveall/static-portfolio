@@ -1,5 +1,5 @@
 #!/bin/sh
 
-sass --watch styles/application.css.scss:styles/application.css &
+sass --watch assets/styles/application.css.scss:assets/styles/application.css &
 babel assets/scripts/es2015 --watch --out-file assets/scripts/application.js --source-maps &
 ruby -rwebrick -e"s = WEBrick::HTTPServer.new(:Port => 3000, :DocumentRoot => Dir.pwd); trap('INT') { s.shutdown }; s.start"
