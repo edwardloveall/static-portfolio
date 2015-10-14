@@ -618,4 +618,9 @@ footer {
   footer a:hover {
     text-decoration: underline; }
 
+body.safari header {
+  background: transparent url("/assets/images/logo.gif") no-repeat center; }
+  body.safari header h1 {
+    display: none; }
+
 /*# sourceMappingURL=application.css.map */

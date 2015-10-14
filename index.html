@@ -6,6 +6,7 @@
     <script src="https://use.typekit.net/bts7vjo.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <script src="/assets/scripts/application.js"></script>
+    <script src="/assets/scripts/bowser.min.js"></script>
     <link rel="stylesheet" href="/assets/styles/application.css" media="screen" charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
@@ -83,7 +84,23 @@
       &copy; 2015 <a href="http://edwardloveall.com/" rel="me,author">Edward Loveall</a> &bull; <a href="http://github.com/edwardloveall" rel="archives,external">Source code</a>
     </footer>
     <script type="text/javascript">
-      new Navigation('nav.main');
+      function ready(fn) {
+        if (document.readyState != 'loading'){
+          fn();
+        } else if (document.addEventListener) {
+          document.addEventListener('DOMContentLoaded', fn);
+        } else {
+          document.attachEvent('onreadystatechange', function() {
+            if (document.readyState != 'loading')
+              fn();
+          });
+        }
+      }
+
+      ready(function() {
+        new Navigation('nav.main');
+        Detector.setBodyClass();
+      });
     </script>
   </body>
 </html>
