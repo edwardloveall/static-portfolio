@@ -618,9 +618,13 @@ footer {
   footer a:hover {
     text-decoration: underline; }
 
-body.safari header {
+body.internet.explorer header {
   background: transparent url("/assets/images/logo.gif") no-repeat center; }
-  body.safari header h1 {
+  body.internet.explorer header h1 {
     display: none; }
+body.internet.explorer nav.main div.track {
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  position: static; }
 
 /*# sourceMappingURL=application.css.map */
