@@ -1,6 +1,8 @@
-#!/bin/sh
+#!/usr/bin/env ruby
 
-ruby -rwebrick -e"fork do
+require 'webrick'
+
+fork do
   system('sass', '--watch', 'assets/styles/application.css.scss:assets/styles/application.css')
 end
 
@@ -14,4 +16,4 @@ trap('INT') do
   server.shutdown
 end
 
-server.start"
+server.start
