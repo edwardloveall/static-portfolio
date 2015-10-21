@@ -1,9 +1,13 @@
 body {
+  @include display(flex);
+  @include flex-direction(column);
   background-color: $background-color;
+  min-height: 100vh;
   position: relative;
 }
 
 main {
+  @include flex(1);
   @include outer-container;
 
   @include media($desktop) {
