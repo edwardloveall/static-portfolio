@@ -2,7 +2,7 @@
   @include clearfix;
 }
 
-.project {
+.project-image {
   @include display(flex);
   background: $white none no-repeat center center;
   border: $default-border;
